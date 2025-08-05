@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Responsivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon" id="menu-toggle">☰</div>
+    <div class="logo">MiDashboard</div>
+    <input type="text" class="search" placeholder="Buscar...">
+    <div class="header-icons">
+      <span class="icon">🔔</span>
+      <span class="icon">👤</span>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Productos</a>
+      <a href="#">Ventas</a>
+      <a href="#">Reportes</a>
+      <a href="#">Configuración</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section class="stats">
+      <div class="card">Ventas: $30.456</div>
+      <div class="card">Usuarios: 2.500</div>
+      <div class="card">Pedidos: 890</div>
+      <div class="card">Stock: 90%</div>
+    </section>
+
+    <section class="table-section">
+      <h2>Lista de Usuarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Nombre</th><th>Email</th><th>Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Sofia Marin</td><td>sofia.marin@gmail.com</td><td>Admin</td></tr>
+          <tr><td>2</td><td>Erick Roa</td><td>erick.roa@gmail.com</td><td>Usuario</td></tr>
+          <tr><td>3</td><td>Camilo Arias</td><td>camilo.arias@gmail.com</td><td>Usuario</td></tr>
+          <tr><td>4</td><td>Ruben Ortiz</td><td>ruben.ortiz@gmail.com</td><td>Usuario</td></tr>
+          <tr><td>5</td><td>Eva Lora</td><td>eva.lora@gmail.com</td><td>Usuario</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
