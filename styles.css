@@ -109,6 +109,13 @@ table th {
 /* ==== RESPONSIVE ==== */
 /* Tablet */
 @media (max-width: 1023px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
   .menu-icon {
     display: block;
   }
