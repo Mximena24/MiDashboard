@@ -109,21 +109,24 @@ table th {
 /* ==== RESPONSIVE ==== */
 /* Tablet */
 @media (max-width: 1023px) {
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
+  .menu-icon {
+    display: block;
   }
-  body {
-    grid-template-columns: 80px 1fr;
-  }
+
   .sidebar {
-    width: 80px;
-    padding: 0.5rem;
+    position: fixed;
+    left: -250px;
+    top: 60px;
+    height: calc(100% - 60px);
+    width: 250px;
+    transition: left 0.3s;
+    z-index: 1000;
   }
-  .sidebar nav a {
-    font-size: 0;
-    padding: 0.7rem;
+  .sidebar.active {
+    left: 0;
   }
 }
+
 
 /* Móvil */
 @media (max-width: 768px) {
